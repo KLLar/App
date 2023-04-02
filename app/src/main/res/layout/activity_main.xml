@@ -5,32 +5,39 @@
     android:background="@drawable/background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
-        android:id="@+id/extraction"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="跳转到提取页面"/>
+        <Button
+            android:id="@+id/extraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳转到提取页面"/>
 
 
-    <ImageView
-        android:id="@+id/picture"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:adjustViewBounds="true"
-        />
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            />
+    </RelativeLayout>
 
 
-    <Button
-        android:id="@+id/take_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/round_button"
-        android:text="拍照"
-        />
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/round_button"
+            android:text="拍照"
+            />
 
 
 

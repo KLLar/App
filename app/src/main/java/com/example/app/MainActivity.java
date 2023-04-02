@@ -25,6 +25,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.app.util.LSB;
+
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -115,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
         startActivityForResult(intent, REQUEST_CAMERA_2);
+        //LSB.LSBEncoder(s,mFilePath,mFilePath);
     }
 
     @Override
